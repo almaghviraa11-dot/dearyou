@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dear You - A Little Love Letter</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff0f5, #f5eafa, #fcecf2);
+    font-family: Georgia, serif;
+    color: #806777;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header small {
+    letter-spacing: 4px;
+    color: #c18ba9;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-style: italic;
+    color: #c887a8;
+    margin: 15px 0;
+}
+
+.header p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #a88b9e;
+}
+
+.letter {
+    background: #fffdfd;
+    padding: 45px;
+    border-radius: 25px;
+    border: 1px solid #f2dce8;
+    box-shadow: 0 15px 40px rgba(190,139,169,0.15);
+}
+
+.date {
+    color: #c49ab0;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.letter h2 {
+    color: #bd829f;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+
+.letter p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.quote {
+    background: #fff0f6;
+    border-left: 3px solid #e7b2cc;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 25px 0;
+    color: #ad7896;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.signature {
+    font-style: italic;
+    font-size: 26px;
+    color: #c887a8;
+    margin-top: 30px;
+}
+
+.button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 13px 25px;
+    background: #edc9dc;
+    color: #986b85;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.button:hover {
+    background: #e4b3ce;
+}
+
+.surprise {
+    display: none;
+    background: #f9eff7;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #b99bae;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+@media(max-width: 600px) {
+    .letter {
+        padding: 25px;
+    }
+
+    .header h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <small>A SMALL LETTER TO U WHO HAS A PLACE IN MY HEART</small>
+        <h1>Dear You, ♡</h1>
+        <p>some words my heart wanted to say</p>
+    </div>
+
+    <div class="letter">
+
+        <div class="date">
+            November 26, 2026 · written with love
+        </div>
+
+        <h2>To someone special,</h2>
+
+        <p>
+            Hello, how was your day?
+            i hope today has been kind to you.
+            kalau hari ini ada hal buruk,
+            i hope tomorrow will be much better :___3
+        </p>
+
+        <p>
+            u know, sometimes the simplest things
+            can make an ordinary day feel special.
+            a little conversation, a little laughter,
+            and a little moment worth remembering.
+        </p>
+
+        <div class="quote">
+            "u deserve a love that feels like
+            a warm cup of tea on a rainy afternoon.
+            soft, peaceful, and full of comfort."
+        </div>
+
+        <p>
+            jangan lupa buat take care of urself.
+            jangan lupa juga kalau u deserve happiness too.
+            take ur time, breathe slowly,
+            and never be too hard on yourself.
+        </p>
+
+        <p>
+            i hope life gives you beautiful surprises,
+            peaceful nights, and endless reasons to smile.
+            semoga hal-hal baik selalu datang ke kamu yaa 3___#
+        </p>
+
+        <p>
+            this is just a little letter,
+            but i hope it makes your day a little sweeter.
+            sending you warm hugs through these words. ♡
+        </p>
+
+        <div class="signature">
+            with love, always ♡
+        </div>
+
+        <button class="button" onclick="openLetter()">
+            open a little surprise ♡
+        </button>
+
+        <div class="surprise" id="surprise">
+            u're someone's favorite notification.
+            never forget how special you are.
+            keep smiling, okay? ♡
+        </div>
+
+    </div>
+
+    <div class="footer">
+        made with love & a little bit of pink ✿
+    </div>
+
+</div>
+
+<script>
+function openLetter() {
+    var box = document.getElementById("surprise");
+
+    if (box.style.display === "block") {
+        box.style.display = "none";
+    } else {
+        box.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
